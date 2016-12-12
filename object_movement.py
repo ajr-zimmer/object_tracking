@@ -29,6 +29,8 @@ direction = ""
 # to the webcam
 if not args.get("video", False):
 	camera = cv2.VideoCapture(0)
+    # USB webcam on Linux
+    #camera = cv2.VideoCapture(1)
  
 # otherwise, grab a reference to the video file
 else:
